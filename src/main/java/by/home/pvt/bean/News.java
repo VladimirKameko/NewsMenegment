@@ -1,16 +1,16 @@
 package by.home.pvt.bean;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class News {
 
     private String newsTitle;
-    private Date dateCreate;
+    private LocalDate dateCreate;
     private String brief;
     private String content;
 
-    public News(String newsTitle, Date dateCreate, String brief, String content) {
+    public News(String newsTitle, LocalDate dateCreate, String brief, String content) {
         this.newsTitle = newsTitle;
         this.dateCreate = dateCreate;
         this.brief = brief;
@@ -28,11 +28,11 @@ public class News {
         this.newsTitle = newsTitle;
     }
 
-    public Date getDateCreate() {
+    public LocalDate getDateCreate() {
         return dateCreate;
     }
 
-    public void setDateCreate(Date dateCreate) {
+    public void setDateCreate(LocalDate dateCreate) {
         this.dateCreate = dateCreate;
     }
 

@@ -4,12 +4,21 @@ import by.home.pvt.bean.News;
 import by.home.pvt.dao.DaoException;
 import by.home.pvt.dao.NewsDao;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class NewsInMemoryDaoImpl implements NewsDao {
 
     private static final List<News> newsRepo = new ArrayList<>();
+
+    static {
+        newsRepo.add(new News("NewsTitle", LocalDate.now(), "briefbriefbriefbriefbriefbriefbriefbriefbrief","content" +
+                "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent"));
+        newsRepo.add(new News("NewsTitle", LocalDate.now(), "briefbriefbriefbriefbriefbriefbriefbriefbrief","content" +
+                "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent"));
+    }
 
 
     @Override
