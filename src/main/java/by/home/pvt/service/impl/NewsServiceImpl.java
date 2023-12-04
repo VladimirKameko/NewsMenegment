@@ -1,7 +1,7 @@
 package by.home.pvt.service.impl;
 
 import by.home.pvt.bean.News;
-import by.home.pvt.dao.DaoException;
+import by.home.pvt.dao.exceptions.DaoException;
 import by.home.pvt.dao.DaoProvider;
 import by.home.pvt.dao.NewsDao;
 import by.home.pvt.service.NewsService;

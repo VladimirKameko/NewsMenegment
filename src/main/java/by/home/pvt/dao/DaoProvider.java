@@ -1,16 +1,16 @@
 package by.home.pvt.dao;
 
-import by.home.pvt.dao.impl.NewsInMemoryDaoImpl;
-import by.home.pvt.service.ServiceProvider;
+import by.home.pvt.dao.impl.UserDaoImpl;
 
 public final class DaoProvider {
 
     private static final DaoProvider instance = new DaoProvider();
 
-    private final NewsDao newsDao = new NewsInMemoryDaoImpl();
 
-    public NewsDao getNewsDao() {
-        return newsDao;
+    private final UserDao userDao = new UserDaoImpl();
+
+    public UserDao getUserDao() {
+        return userDao;
     }
 
 
